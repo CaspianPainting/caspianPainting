@@ -44,7 +44,7 @@ const options = {
 let toggleItem = (entries, observer) => {
   entries.forEach(entry => {
       if(entry.isIntersecting){
-          entry.target.classList.add('show');
+          entry.target.classList.add('div-show');
       }
   })
 }
