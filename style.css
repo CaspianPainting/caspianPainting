@@ -1,0 +1,508 @@
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+/* *********NAVBAR***************** */
+.big-nav {
+  display: none;
+}
+
+
+.logo-collapsed {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+.logo-collapsed img {
+  width: 100%;
+}
+
+.company-name-collapsed {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 150px;
+  text-align: center;
+}
+
+.company-name-collapsed h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.toggler {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.toggler i {
+  font-size: 30px;
+  color: rgb(94, 94, 94);
+}
+
+.item {
+  opacity: 0;
+  position: fixed;
+  right: -133px;
+  top: 45px;
+  width: 400px;
+  text-align: left;
+  z-index: 1;
+}
+
+.item a {
+  text-decoration: none;
+  color: black;
+  font-size: 27px;
+  font-weight: 600;
+  font-family: "Staatliches", "serif";
+}
+
+.item div {
+  background-size: cover;
+  display: inline-block;
+  border: 1px solid white;
+  width: 210px;
+  padding-top: 5px;
+  padding-left: 5px;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+#item-1 div {
+  background-image: url(images/nav-link-1.jpg);
+}
+
+#item-2 div {
+  background-image: url(images/gradient-2.jpg);
+}
+
+#item-3 div {
+  background-image: url(images/gradient-1.jpg);
+}
+
+#item-4 div {
+  background-image: url(images/nav-link-3.jpg);
+}
+
+.disable {
+  pointer-events: none;
+}
+
+.show-menu-home {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.show-menu-services {
+  opacity: 1;
+  transform: rotate(-30deg);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.show-menu-gallery {
+  opacity: 1;
+  transform: rotate(-60deg);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.show-menu-contact {
+  opacity: 1;
+  transform: rotate(-90deg);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.hide-menu {
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+/* *****************HEADER**************** */
+
+.title {
+  font-weight: 400;
+  color: white;
+}
+
+.header {
+  padding: 20px;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  background-color: rgba(55, 71, 100, 0.9);
+  opacity: 0;
+}
+
+.parallax {
+  position: relative;
+  text-align: center;
+  height: 700px;
+  z-index: -1;
+}
+
+.parallax:before {
+  content: "";
+  background: url("images/header-background-1.jpg");
+  position: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* *****************SERVICES**************** */
+
+.services {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.services-header div {
+  width: 100%;
+  margin: 2rem auto 300px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* **************  GALLERY  ****************************** */
+
+.gallery {
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-family: "Staatliches", "serif";
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.gallery hr {
+  border: 2px solid black;
+  opacity: 1;
+  margin-top: 0;
+}
+
+#before-after {
+  text-align: center;
+}
+
+.before, 
+.after {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  width: 48%;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.before {  
+  background-image: url(images/gallery/before.jpg);  
+}
+
+.after{ 
+ background-image: url(images/gallery/after.jpg); 
+}
+
+.beforeAfter {
+  position: absolute;
+  bottom: 100px  ;
+  height: fit-content;
+  width: 100%;
+  background-color: rgba(63, 147, 153, 0.8);
+  opacity: 0;
+}
+
+.before div h1,
+.after div h1 {
+  margin-top: 0;
+}
+
+.div-show {
+  opacity: 1;
+  transform: translate(0px, 90px);
+  transition: transform 2s, opacity 2s;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.modal-close-btn {
+  background: transparent;
+  border: none;
+}
+
+.modal-close-btn i {
+  font-size: 50px;
+  color: white;
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-body {
+  padding-top: 5px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 5px;
+}
+
+.carousel {
+  border: 10px solid white;
+}
+
+/* ************  CONTACT  ************************** */
+.contact {
+  background-color: #f4f4f4;
+  height: 550px;
+}
+#contact-div {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  margin: 0;
+  background-image: linear-gradient(
+    176deg,
+    #22313f 70%,
+    #f4f4f4 calc(70% + 2px)
+  );
+}
+
+#contact-div h1 {
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#contact-div hr {
+  border: 2px solid white;
+  margin-top: 0;
+  opacity: 1;
+}
+
+#contact-div p {
+  display: inline;
+  color: white;
+  line-height: 2;
+}
+
+#free-quote {
+  font-size: 20px;
+  line-height: 0.5;
+}
+
+#contact-div i {
+  color: white;
+  padding-right: 5px;
+}
+
+#contact-div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#map-div {
+  margin-left: 5rem;
+  margin-top: 2rem;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid black;
+  padding: 0;
+}
+
+/* ********************* MEDIA QUERIES ********************** */
+/* *********************BOOTSTRAP SM ************************* */
+@media screen and (min-width: 576px) {
+  #map-div {
+    margin: 4rem auto;
+  }
+
+  .toggler,
+  .logo-collapsed,
+  .company-name-collapsed {
+    display: none;
+  }
+
+
+
+  .big-nav {
+    position: relative;
+    display: block;
+    background-color: white;
+    height: 60px;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 15px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+  
+  .company-name {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .company-name h5 {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+
+  .big-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px 0 5px;
+    border-right: 1px solid black;
+  }
+
+  .big-nav a:last-child {
+    border-right: none;
+  }
+  .before, 
+  .after {
+    height: 400px;
+  }
+}
+/* *********************BOOTSTRAP MD ************************* */
+@media screen and (min-width: 768px) {
+
+  .big-nav {
+    padding-right: 70px;
+    
+  }
+
+  .logo {
+    left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .company-name {
+    text-align: left;
+    top: 37px;
+    left: 65px;
+    width: 300px;
+
+  }
+
+  .before, 
+  .after {
+    height: 500px;
+  }
+
+  .before div h1,
+.after div h1 {
+  font-size: 60px;
+}
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  #map-div {
+    margin-left: 0;
+    height: 300px;
+    margin-bottom: 0;
+  }
+}
+/* *********************BOOTSTRAP LG ************************* */
+@media screen and (min-width: 992px) {
+
+  .logo {
+    left: 90px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .company-name {
+    top: 37px;
+    left: 130px;
+  }
+
+  .before, 
+  .after {
+    height: 700px;
+  }
+
+  .before div h1,
+  .after div h1 {
+    font-size: 90px;
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+}
+/* *********************BOOTSTRAP XL ************************* */
+@media screen and (min-width: 1200px) {
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  .before, 
+  .after {
+    height: 570px;
+    width: 350px;
+    margin: 0px 20px;
+  }
+
+  #map-div {
+    margin-left: 0;
+    height: 300px;
+  }
+
+
+}
+
+/* ***************  TEST  *************** */
